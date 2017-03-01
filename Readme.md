@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Кульков](https://up.htmlacademy.ru/adaptive/10/user/105397).
-* Наставник: `Сергей "Dartess" Козлов`.
+* Наставник: [Сергей "Dartess" Козлов](https://htmlacademy.ru/profile/id27386).
 
 ---
 
