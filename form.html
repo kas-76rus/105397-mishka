@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Мишка)</title>
+</head>
+<body>
+	<header class="page-header">
+		<div class="page-header__container">
+			<div class="page-header__logo">
+				<img src="#" alt="Логотип Мишка">
+			</div>
+			<nav class="page-header__menu">
+				<button class="main-nav__toggle" type="button">Открыть меню</button>
+				<ul class="page-header__menu-items">
+					<li class="page-header__menu-item page-header__menu-item--catalog">
+						<a href="catalog.html">Каталог товаров</a>
+					</li>
+					<li class="page-header__menu-item page-header__menu-item--knitting">
+						<a href="form.html">Вязание на заказ</a>
+					</li>
+					<li class="page-header__menu-item page-header__menu-item--new">
+						<a href="catalog.html">Новые поступления</a>
+					</li>
+					<li class="page-header__menu-item page-header__menu-item--sales">
+						<a href="#">Распродажа</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="page-header__user-menu">
+				<ul class="user-menu">
+					<li class="page-header__menu-item page-header__menu-item--search">
+						<a href="#">Поиск по сайту</a>
+					</li>
+					<li class="page-header__menu-item page-header__menu-item--basket">
+						 <a href="#">Корзина: пока пуста</a>
+					</li>
+				</ul>
+			</div>
+			<span class="page-header__delivery">Бесплатная доставка по России</span>
+        </div>
+	</header>
+
+	<main class="content">
+		<div class="content-container">
+			<div class="order-title">
+				<h1>Вязание на заказ</h1>
+			</div>
+			<form action="#" class="order-form" method="post">
+				<div class="order-form__description">
+					<p class="order-form__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+				</div>
+				<fildset class="order-form__holder">
+					<div class="order-form__holder-name">
+						<span class="order-form__holder-title">Тип</span>
+					</div>
+					<ul class="order-form__filter">
+						<li class="order-form__filter-item">
+							<input type="radio" name="radiogroup" value="RadioButton" id="radio-type1">
+							<label class="order-form__filter-radio" for="radio-type1">Аксессуар для интерьера</label>
+						</li>
+						<li class="order-form__filter-item">
+							<input type="radio" name="radiogroup" value="RadioButton" id="radio-type2">
+							<label class="order-form__filter-radio" for="radio-type2">Детская игрушка</label>
+						</li>
+					</ul>
+				</fildset>
+
+				<fildset class="order-form__holder">
+					<div class="order-form__holder-name">
+						<span class="order-form__holder-title">Цвет</span>
+					</div>
+					<ul class="order-form__filter">
+						<li class="order-form__filter-item">
+							<input type="checkbox" name="checkboxgroup" value="CheckboxButton" id="checkbox-color1">
+							<label class="order-form__filter-checkbox" for="checkbox-color1">Белый</label>
+						</li>
+						<li class="order-form__filter-item">
+							<input type="checkbox" name="checkboxgroup" value="CheckboxButton" id="checkbox-color2">
+							<label class="order-form__filter-checkbox" for="checkbox-color2">Серый</label>
+						</li>
+						<li class="order-form__filter-item">
+							<input type="checkbox" name="checkboxgroup" value="CheckboxButton" id="checkbox-color3">
+							<label class="order-form__filter-checkbox" for="checkbox-color3">"Тиффани"</label>
+						</li>
+						<li class="order-form__filter-item">
+							<input type="checkbox" name="checkboxgroup" value="CheckboxButton" id="checkbox-color4">
+							<label class="order-form__filter-checkbox" for="checkbox-color4">Черный</label>
+						</li>
+						<li class="order-form__filter-item">
+							<input type="checkbox" name="checkboxgroup" value="CheckboxButton" id="checkbox-color5">
+							<label class="order-form__filter-checkbox" for="checkbox-color5">Розовый</label>
+						</li>
+						<li class="order-form__filter-item">
+							<input type="checkbox" name="checkboxgroup" value="CheckboxButton" id="checkbox-color6">
+							<label class="order-form__filter-checkbox" for="checkbox-color6">Оранжевый</label>
+						</li>
+					</ul>
+				</fildset>
+
+				<fildset class="order-form__holder">
+					<div class="order-form__holder-name">
+						<span class="order-form__holder-title">ФИО</span>
+					</div>
+					<ul class="order-form__filter">
+						<li class="order-form__filter-item">
+							<label for="family-name" class="order-form__family-name">Фамилия:</label>
+							<input class="order-form__family-name-input" id="family-name" type="text" name="family-name" placeholder="Укажите фамилию">
+						</li>
+						<li class="order-form__filter-item">
+							<label for="first-name" class="order-form__first-name">Имя:</label>
+							<input class="order-form__first-name-input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя">
+						</li>
+						<li class="order-form__filter-item">
+							<label for="last-name" class="order-form__last-name">Отчество:</label>
+							<input class="order-form__last-name-input" id="last-name" type="text" name="last-name" placeholder="Отчество, если желаете">
+						</li>
+					</ul>
+				</fildset>
+
+				<fildset class="order-form__holder">
+					<div class="order-form__holder-name">
+						<span class="order-form__holder-title">Тел</span>
+					</div>
+					<ul class="order-form__filter order-form__filter-phone">
+						<li class="order-form__filter-item">
+							<input id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ">
+						</li>
+					</ul>
+					<div class="order-form__holder-name">
+						<span class="order-form__holder-title">E-mail</span>
+					</div>
+					<ul class="order-form__filter order-form__filter-mail">
+						<li class="order-form__filter-item">
+							<input id="mail" type="text" name="mail" placeholder="Ваш e-mail">
+						</li>
+					</ul>
+				</fildset>
+
+				<fildset class="order-form__holder">
+					<div class="order-form__holder-name">
+						<span class="order-form__holder-title">Доп</span>
+					</div>
+					<ul class="order-form__filter">
+						<li class="order-form__filter-item">
+							<textarea id="text" name="text" rows="5" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+						</li>
+					</ul>
+					<div class="submit-area">
+						<span class="order-form__required">Все поля являются обязательными</span>
+						<button type="submit" class="btn">Отправить заказ</button>   
+					</div>
+				</fildset>
+
+			</form>
+		</div>
+	</main>
+
+	<footer class="page-footer">
+		<div class="page-footer__container">
+			<ul class="page-footer__social-items">
+				<li class="page-footer__social-item page-footer__social-item--inst"></li>
+				<li class="page-footer__social-item page-footer__social-item--fb"></li>
+				<li class="page-footer__social-item page-footer__social-item--tw"></li>
+			</ul>
+			<div class="page-footer__copyright">
+				Разработано:
+				<a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
