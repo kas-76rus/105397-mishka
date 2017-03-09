@@ -5,50 +5,37 @@
 	<title>Мишка)</title>
 </head>
 <body>
+
 	<header class="page-header">
 		<div class="page-header__container">
 			<div class="page-header__logo">
-				<img src="#" alt="Логотип Мишка">
+				<a href="index.html">Логотип Мишка</a>
 			</div>
 			<nav class="page-header__menu">
-				<button class="main-nav__toggle" type="button">Открыть меню</button>
+				<button class="page-header__toggle" type="button">Открыть меню</button>
 				<ul class="page-header__menu-items">
-					<li class="page-header__menu-item page-header__menu-item--catalog">
+					<li class="page-header__menu-item">
 						<a href="catalog.html">Каталог товаров</a>
 					</li>
-					<li class="page-header__menu-item page-header__menu-item--knitting">
-						<a href="form.html">Вязание на заказ</a>
+					<li class="page-header__menu-item page-header__menu-item--icon page-header__menu-item--search">
+						<a href="form.html">Поиск по сайту</a>
 					</li>
-					<li class="page-header__menu-item page-header__menu-item--new">
-						<a href="catalog.html">Новые поступления</a>
-					</li>
-					<li class="page-header__menu-item page-header__menu-item--sales">
-						<a href="#">Распродажа</a>
+					<li class="page-header__menu-item page-header__menu-item--icon page-header__menu-item--basket">
+						<a href="catalog.html">Корзина: пока пуста</a>
 					</li>
 				</ul>
 			</nav>
-			<div class="page-header__user-menu">
-				<ul class="user-menu">
-					<li class="page-header__menu-item page-header__menu-item--search">
-						<a href="#">Поиск по сайту</a>
-					</li>
-					<li class="page-header__menu-item page-header__menu-item--basket">
-						 <a href="#">Корзина: пока пуста</a>
-					</li>
-				</ul>
-			</div>
-			<span class="page-header__delivery">Бесплатная доставка по России</span>
-        </div>
+		</div>
 	</header>
 
 	<main class="content">
-		<section class="catalog">
+		<section class="">
 			<div class="catalog-title">
 				<h1>Каталог товаров</h1>
 			</div>
 			<div class="content__container">
-				<div class="catalog-items">
-					<div class="catalog-item">
+				<div class="catalog">
+					<div class="catalog-item catalog__item">
 						<a href="#" class="catalog-item--open">
 							<img src="#" alt="зайчик-попрыгайчик">
 						</a>
@@ -56,7 +43,7 @@
 						<span class="catalog-item__description">Рост 30см, вес 200гр</span>
 						<div class="catalog-item__buy">
 							<span class="catalog-item-price">1200 руб.</span>
-							<a href="#" class="catalog-item__backet"></a>
+							<a href="#" class="catalog-item__backet" aria-label="Купить"></a>
 						</div>
 					</div>
 					<div class="catalog-item">
@@ -98,14 +85,16 @@
 
 	<footer class="page-footer">
 		<div class="page-footer__container">
-			<ul class="page-footer__social-items">
-				<li class="page-footer__social-item page-footer__social-item--inst"></li>
-				<li class="page-footer__social-item page-footer__social-item--fb"></li>
-				<li class="page-footer__social-item page-footer__social-item--tw"></li>
-			</ul>
+			<div class="socials">
+				<ul class="socials__social-items">
+					<li class="socials__social-item socials__social-item--icon socials__social-item--inst">инстаграмм</li>
+					<li class="socials__social-item socials__social-item--icon socials__social-item--fb">фейсбук</li>
+					<li class="socials__social-item socials__social-item--icon socials__social-item--tw">твитер</li>
+				</ul>
+			</div>
 			<div class="page-footer__copyright">
 				Разработано:
-				<a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+				<a class="btn page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
 			</div>
 		</div>
 	</footer>
