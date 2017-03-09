@@ -5,113 +5,141 @@
 	<title>Мишка)</title>
 </head>
 <body>
+
 	<header class="page-header">
 		<div class="page-header__container">
 			<div class="page-header__logo">
-				<img src="#" alt="Логотип Мишка">
+				<a href="index.html">Логотип Мишка</a>
 			</div>
 			<nav class="page-header__menu">
-				<button class="main-nav__toggle" type="button">Открыть меню</button>
+				<button class="page-header__toggle" type="button">Открыть меню</button>
 				<ul class="page-header__menu-items">
-					<li class="page-header__menu-item page-header__menu-item--catalog">
+					<li class="page-header__menu-item">
 						<a href="catalog.html">Каталог товаров</a>
 					</li>
-					<li class="page-header__menu-item page-header__menu-item--knitting">
-						<a href="form.html">Вязание на заказ</a>
+					<li class="page-header__menu-item page-header__menu-item--icon page-header__menu-item--search">
+						<a href="form.html">Поиск по сайту</a>
 					</li>
-					<li class="page-header__menu-item page-header__menu-item--new">
-						<a href="catalog.html">Новые поступления</a>
-					</li>
-					<li class="page-header__menu-item page-header__menu-item--sales">
-						<a href="#">Распродажа</a>
+					<li class="page-header__menu-item page-header__menu-item--icon page-header__menu-item--basket">
+						<a href="catalog.html">Корзина: пока пуста</a>
 					</li>
 				</ul>
 			</nav>
-			<div class="page-header__user-menu">
-				<ul class="user-menu">
-					<li class="page-header__menu-item page-header__menu-item--search">
-						<a href="#">Поиск по сайту</a>
-					</li>
-					<li class="page-header__menu-item page-header__menu-item--basket">
-						 <a href="#">Корзина: пока пуста</a>
-					</li>
-				</ul>
-			</div>
-			<span class="page-header__delivery">Бесплатная доставка по России</span>
-        </div>
+		</div>
 	</header>
 
 	<main class="content">
-		<section class="products">
-			<div class="products__title">
-				<h1>Милые штуки ручной работы для дома</h1>
-				<div class="product__items">
-					<a href="#" class="product__item">Предметы интерьера</a>
-					<a href="#" class="product__item">Детские игрушки</a>
-				</div>
+		<div class="page-title">
+			<h1>Милые штуки ручной работы для дома</h1>
+		</div>
+		<div class="page-menu">
+			<div class="page-menu__items">
+				<a href="#" class="product__item">Предметы интерьера</a>
+				<a href="#" class="product__item">Детские игрушки</a>
 			</div>
+		</div>
+
+		<section class="product-of-week">
 			<div class="content__container">
-				<div class="product__description">
+				<div class="product-of-week__title">
 					<h1>Вязаные корзинки</h1>
-					<span class="product__of-week">Товар недели</span>
-					<p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+					<span class="product-of-week__subtitle">Товар недели</span>
 				</div>
-				<img src="#" alt="Корзинка красивая" class="product__description-pic">
-				<span class="product__value">Цена: 990 руб.</span>
+				<p class="product-of-week__text">
+					Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках, и&nbsp;трех размерах.
+				</p>
+				<table class="product-of-week__options">
+					<tr>
+						<td>Цвет:</td>
+						<td>«Тиффани»/серый</td>
+					</tr>
+					<tr>
+						<td>Диаметр:</td>
+						<td>25 см</td>
+					</tr>
+					<tr>
+						<td>Высота</td>
+						<td>15 см</td>
+					</tr>
+				</table>
+				<img src="#" alt="Корзинка красивая" class="product-of-week__pic">
+				<span class="product-of-week__value">Цена: 990 руб.</span>
 				<a href="#" class="btn">Заказать</a>
 			</div>
 		</section>
+
 		<section class="advantages">
 			<div class="content__container">
-				<h2>Коротко о нас</h2>
+				<div class="advantages__title">
+					<h2>Коротко о нас</h2>
+				</div>
 				<ul class="advantages__items">
-					<li class="advantages__item advantages__item--eco"></li>
-					<li class="advantages__item advantages__item--price"></li>
-					<li class="advantages__item advantages__item--likes"></li>
-					<li class="advantages__item advantages__item--handmade"></li>
-					<li class="advantages__item advantages__item--native"></li>
-					<li class="advantages__item advantages__item--pack"></li>
+					<li class="advantages__item advantages__item-icon advantages__item--eco">Экологически чистые материалы</li>
+					<li class="advantages__item advantages__item-icon advantages__item--price">Скандинавский стиль по&nbsp;российской цене</li>
+					<li class="advantages__item advantages__item-icon advantages__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
+					<li class="advantages__item advantages__item-icon advantages__item--handmade">Связано вручную с&nbsp;любовью и&nbsp;умилением</li>
+					<li class="advantages__item advantages__item-icon advantages__item--native">Поддержка отечественного производителя</li>
+					<li class="advantages__item advantages__item-icon advantages__item--pack">Поставляется в&nbsp;подарочной упаковке</li>
 				</ul>
 			</div>
-		</section>	
+		</section>
+
 		<section class="reviews">
 			<div class="content__container">
-				<h2>Отзывы</h2>
-				<p class="reviews__author-text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-				<span class="rewiews__author-name">Анастасия Красильникова</span>
-				<span class="reviews__author-contacts">@misssssiskras</span>
-				<div class="reviews__controls">
-					<a href="#" class="reviews__btn reviews__btn--prev"><img src="#" alt="назад"></a>
-					<a href="#" class="reviews__btn reviews__btn--next"><img src="#" alt="вперед"></a>
+				<div class="reviews__title">
+					<h2>Отзывы</h2>
 				</div>
-				<button class="btn">Написать</button>
+				<div class="reviews__list">
+					<blockquote class="review__item">
+						<p>Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
+						<cite>Анастасия Красильникова</cite>
+					</blockquote>
+					<span class="reviews__author-contact">@misssssiskras</span>
+				</div>
+				<div class="sliders">
+					<a href="#" class="sliders__btn sliders__btn--prev">назад</a>
+					<a href="#" class="sliders__btn sliders__btn--next">вперед</a>
+				</div>
+				<a href="#" class="btn">Написать</a>
 			</div>
 		</section>
+
 		<section class="contacts">
 			<div class="content__container">
-				<h2>Контакты</h2>
-				<span class="contacts__title">e-mail:</span>
-				<a href="#" class="contacts__title contacts__title--mail">info@mimimishkashop.ru</a>
-				<span class="contacts__title">адрес:</span>
-				<p class="contacts__title contacts__title--adress">г. Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</p>
+				<div class="contacts__title">
+					<h2>Контакты</h2>
+				</div>
+				<table class="contacts__adress">
+					<tr>
+						<td>e-mail:</td>
+						<td>info@mimimishkashop.ru</td>
+					</tr>
+					<tr>
+						<td>адрес:</td>
+						<td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+					</tr>
+				</table>
 			</div>
 			<div class="contacts__map">
 				<img src="#" alt="Карта проезда">
 			</div>
 			<a href="#" class="btn">Напишите нам</a>
 		</section>
+
 	</main>
 
 	<footer class="page-footer">
 		<div class="page-footer__container">
-			<ul class="page-footer__social-items">
-				<li class="page-footer__social-item page-footer__social-item--inst"></li>
-				<li class="page-footer__social-item page-footer__social-item--fb"></li>
-				<li class="page-footer__social-item page-footer__social-item--tw"></li>
-			</ul>
+			<div class="socials">
+				<ul class="socials__social-items">
+					<li class="socials__social-item socials__social-item--icon socials__social-item--inst"><a href="https://www.instagram.com">инстаграмм</a></li>
+					<li class="socials__social-item socials__social-item--icon socials__social-item--fb"><a href="https://www.facebook.com">фейсбук</a></li>
+					<li class="socials__social-item socials__social-item--icon socials__social-item--tw"><a href="https://twitter.com">твитер</a></li>
+				</ul>
+			</div>
 			<div class="page-footer__copyright">
 				Разработано:
-				<a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+				<a class="btn page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
 			</div>
 		</div>
 	</footer>
