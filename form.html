@@ -16,11 +16,14 @@
 					<li class="page-header__menu-item">
 						<a href="catalog.html">Каталог товаров</a>
 					</li>
+					<li class="page-header__menu-item">
+						<a href="form.html">Вязание на заказ</a>
+					</li>
 					<li class="page-header__menu-item page-header__menu-item--icon page-header__menu-item--search">
-						<a href="form.html">Поиск по сайту</a>
+						<a href="#">Поиск по сайту</a>
 					</li>
 					<li class="page-header__menu-item page-header__menu-item--icon page-header__menu-item--basket">
-						<a href="catalog.html">Корзина: пока пуста</a>
+						<a href="#">Корзина: пока пуста</a>
 					</li>
 				</ul>
 			</nav>
@@ -28,116 +31,107 @@
 	</header>
 
 	<main class="content">
+		<div class="page-title">
+			<h1>Каталог товаров</h1>
+		</div>
 		<div class="content-container">
-			<div class="order-title">
-				<h1>Вязание на заказ</h1>
-			</div>
-			<form action="#" class="order-form" method="post">
-				<div class="order-form__description">
-					<p class="order-form__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+			<form action="#" class="form" method="post">
+				<div class="form__slogan">
+					Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы уточнить детали.
 				</div>
-				<fildset class="order-form__holder">
-					<div class="order-form__holder-name">
-						<span class="order-form__holder-title">Тип</span>
+				<fildset class="form__choice">
+					<div class="form__choice-title">
+						Тип
 					</div>
-					<ul class="order-form__filter">
-						<li class="order-form__filter-item">
-							<input type="radio" name="radiogroup" value="RadioButton" id="radio-type1">
-							<label class="order-form__filter-radio" for="radio-type1">Аксессуар для интерьера</label>
+					<ul class="form__items">
+						<li class="form__item">
+							<input type="radio" name="choiceproduct" value="interior" id="radio-type1">
+							<label class="form__field form__field--radio" for="radio-type1">Аксессуар для интерьера</label>
 						</li>
-						<li class="order-form__filter-item">
-							<input type="radio" name="radiogroup" value="RadioButton" id="radio-type2">
-							<label class="order-form__filter-radio" for="radio-type2">Детская игрушка</label>
+						<li class="form__item">
+							<input type="radio" name="choiceproduct" value="toy" id="radio-type2">
+							<label class="form__field form__field--radio" for="radio-type2">Детская игрушка</label>
 						</li>
 					</ul>
 				</fildset>
 
-				<fildset class="order-form__holder">
-					<div class="order-form__holder-name">
-						<span class="order-form__holder-title">Цвет</span>
+				<fildset class="form__choice">
+					<div class="form__choice-title">
+						Цвет
 					</div>
-					<ul class="order-form__filter">
-						<li class="order-form__filter-item">
-							<input type="checkbox" name="checkboxgroup" value="CheckboxButton" id="checkbox-color1">
-							<label class="order-form__filter-checkbox" for="checkbox-color1">Белый</label>
+					<ul class="form__items">
+						<li class="form__item">
+							<input type="checkbox" name="color" value="white" id="checkbox-color1">
+							<label class="form__field form__field--checkbox" for="checkbox-color1">Белый</label>
 						</li>
-						<li class="order-form__filter-item">
-							<input type="checkbox" name="checkboxgroup" value="CheckboxButton" id="checkbox-color2">
-							<label class="order-form__filter-checkbox" for="checkbox-color2">Серый</label>
+						<li class="form__item">
+							<input type="checkbox" name="color" value="grey" id="checkbox-color2">
+							<label class="form__field form__field--checkbox" for="checkbox-color2">Серый</label>
 						</li>
-						<li class="order-form__filter-item">
-							<input type="checkbox" name="checkboxgroup" value="CheckboxButton" id="checkbox-color3">
-							<label class="order-form__filter-checkbox" for="checkbox-color3">"Тиффани"</label>
+						<li class="form__item">
+							<input type="checkbox" name="color" value="tiffany" id="checkbox-color3">
+							<label class="form__field form__field--checkbox" for="checkbox-color3">"Тиффани"</label>
 						</li>
-						<li class="order-form__filter-item">
-							<input type="checkbox" name="checkboxgroup" value="CheckboxButton" id="checkbox-color4">
-							<label class="order-form__filter-checkbox" for="checkbox-color4">Черный</label>
+						<li class="form__item">
+							<input type="checkbox" name="color" value="black" id="checkbox-color4">
+							<label class="form__field form__field--checkbox" for="checkbox-color4">Черный</label>
 						</li>
-						<li class="order-form__filter-item">
-							<input type="checkbox" name="checkboxgroup" value="CheckboxButton" id="checkbox-color5">
-							<label class="order-form__filter-checkbox" for="checkbox-color5">Розовый</label>
+						<li class="form__item">
+							<input type="checkbox" name="color" value="ping" id="checkbox-color5">
+							<label class="form__field form__field--checkbox" for="checkbox-color5">Розовый</label>
 						</li>
-						<li class="order-form__filter-item">
-							<input type="checkbox" name="checkboxgroup" value="CheckboxButton" id="checkbox-color6">
-							<label class="order-form__filter-checkbox" for="checkbox-color6">Оранжевый</label>
+						<li class="form__item">
+							<input type="checkbox" name="color" value="orange" id="checkbox-color6">
+							<label class="form__field form__field--checkbox" for="checkbox-color6">Оранжевый</label>
 						</li>
 					</ul>
 				</fildset>
 
-				<fildset class="order-form__holder">
-					<div class="order-form__holder-name">
-						<span class="order-form__holder-title">ФИО</span>
+				<fildset class="form__choice">
+					<div class="form__choice-title">
+						ФИО
 					</div>
-					<ul class="order-form__filter">
-						<li class="order-form__filter-item">
-							<label for="family-name" class="order-form__family-name">Фамилия:</label>
-							<input class="order-form__family-name-input" id="family-name" type="text" name="family-name" placeholder="Укажите фамилию">
+					<ul class="form__items">
+						<li class="form__item">
+							<label for="first-name" class="form__field">Имя:</label>
+							<input class="form__textfield" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
 						</li>
-						<li class="order-form__filter-item">
-							<label for="first-name" class="order-form__first-name">Имя:</label>
-							<input class="order-form__first-name-input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя">
+						<li class="form__item">
+							<label for="last-name" class="form__field">Фамилия:</label>
+							<input class="form__textfield" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*" required>
 						</li>
-						<li class="order-form__filter-item">
-							<label for="last-name" class="order-form__last-name">Отчество:</label>
-							<input class="order-form__last-name-input" id="last-name" type="text" name="last-name" placeholder="Отчество, если желаете">
+						<li class="form__item">
+							<label for="family-name" class="form__field">Отчество:</label>
+							<input class="form__textfield" id="family-name" type="text" name="family-name" placeholder="Отчество, если желаете">
 						</li>
 					</ul>
 				</fildset>
 
-				<fildset class="order-form__holder">
-					<div class="order-form__holder-name">
-						<span class="order-form__holder-title">Тел</span>
-					</div>
-					<ul class="order-form__filter order-form__filter-phone">
-						<li class="order-form__filter-item">
-							<input id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ">
+				<fildset class="form__choice">
+					<ul class="form__items">
+						<li class="form__item">
+							<label class="form__choice-title">Тел</label>
+							<input class="form__textfield form__textfield--icon form__textfield--phone" id="phone" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
 						</li>
-					</ul>
-					<div class="order-form__holder-name">
-						<span class="order-form__holder-title">E-mail</span>
-					</div>
-					<ul class="order-form__filter order-form__filter-mail">
 						<li class="order-form__filter-item">
-							<input id="mail" type="text" name="mail" placeholder="Ваш e-mail">
+							<label class="form__choice-title">E-mail</label>
+							<input class="form__textfield form__textfield--icon form__textfield--phone" id="mail" type="email" name="mail" placeholder="Ваш Email*" required>
 						</li>
 					</ul>
 				</fildset>
 
-				<fildset class="order-form__holder">
-					<div class="order-form__holder-name">
-						<span class="order-form__holder-title">Доп</span>
-					</div>
-					<ul class="order-form__filter">
-						<li class="order-form__filter-item">
-							<textarea id="text" name="text" rows="5" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+				<fildset class="form__choice">
+					<ul class="form__items">
+						<li class="form__item">
+							<label class="form__choice-title">Доп</label>
+							<textarea class="form__user-text" id="text" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
 						</li>
 					</ul>
-					<div class="submit-area">
-						<span class="order-form__required">Все поля являются обязательными</span>
+					<div class="form__submit-area">
+						<span class="form__required">*Поля обязательны для заполнения</span>
 						<button type="submit" class="btn">Отправить заказ</button>
 					</div>
 				</fildset>
-
 			</form>
 		</div>
 	</main>
@@ -146,9 +140,9 @@
 		<div class="page-footer__container">
 			<div class="socials">
 				<ul class="socials__social-items">
-					<li class="socials__social-item socials__social-item--icon socials__social-item--inst">инстаграмм</li>
-					<li class="socials__social-item socials__social-item--icon socials__social-item--fb">фейсбук</li>
-					<li class="socials__social-item socials__social-item--icon socials__social-item--tw">твитер</li>
+					<li class="socials__social-item socials__social-item--icon socials__social-item--inst"><a href="https://www.instagram.com">инстаграмм</a></li>
+					<li class="socials__social-item socials__social-item--icon socials__social-item--fb"><a href="https://www.facebook.com">фейсбук</a></li>
+					<li class="socials__social-item socials__social-item--icon socials__social-item--tw"><a href="https://twitter.com">твитер</a></li>
 				</ul>
 			</div>
 			<div class="page-footer__copyright">

@@ -17,11 +17,14 @@
 					<li class="page-header__menu-item">
 						<a href="catalog.html">Каталог товаров</a>
 					</li>
+					<li class="page-header__menu-item">
+						<a href="form.html">Вязание на заказ</a>
+					</li>
 					<li class="page-header__menu-item page-header__menu-item--icon page-header__menu-item--search">
-						<a href="form.html">Поиск по сайту</a>
+						<a href="#">Поиск по сайту</a>
 					</li>
 					<li class="page-header__menu-item page-header__menu-item--icon page-header__menu-item--basket">
-						<a href="catalog.html">Корзина: пока пуста</a>
+						<a href="#">Корзина: пока пуста</a>
 					</li>
 				</ul>
 			</nav>
@@ -29,67 +32,70 @@
 	</header>
 
 	<main class="content">
-		<section class="">
-			<div class="catalog-title">
-				<h1>Каталог товаров</h1>
-			</div>
+		<div class="page-title">
+			<h1>Каталог товаров</h1>
+		</div>
+
+		<section class="catalog">
 			<div class="content__container">
-				<div class="catalog">
-					<div class="catalog-item catalog__item">
-						<a href="#" class="catalog-item--open">
+				<div class="catalog__items">
+					<div class="catalog__item">
+						<a href="#">
 							<img src="#" alt="зайчик-попрыгайчик">
 						</a>
-						<h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
-						<span class="catalog-item__description">Рост 30см, вес 200гр</span>
-						<div class="catalog-item__buy">
-							<span class="catalog-item-price">1200 руб.</span>
-							<a href="#" class="catalog-item__backet" aria-label="Купить"></a>
+						<h2 class="catalog__item-title">Зайчик-попрыгайчик</h2>
+						<span class="catalog__item-description">Рост 30 см, вес 200 г</span>
+						<div class="catalog__item-buy">
+							<span class="catalog__item-price">1200 руб.</span>
+							<a href="#" class="catalog__item-backet" aria-label="Купить">В корзину</a>
 						</div>
 					</div>
-					<div class="catalog-item">
-						<a href="#" class="catalog-item--open">
-							<img src="#" alt="Корзина для белья">
+					<div class="catalog__item">
+						<a href="#">
+							<img src="#" alt="зайчик-попрыгайчик">
 						</a>
-						<h2 class="catalog-item__title">Корзина для белья</h2>
-						<span class="catalog-item__description">Диаметр 15 см, высота 10 см</span>
-						<div class="catalog-item__buy">
-							<span class="catalog-item-price">690 руб.</span>
-							<a href="#" class="catalog-item__backet"></a>
+						<h2 class="catalog__item-title">Корзинка для белья</h2>
+						<span class="catalog__item-description">Диаметр 15 см, высота 10 см</span>
+						<div class="catalog__item-buy">
+							<span class="catalog__item-price">690 руб.</span>
+							<a href="#" class="catalog__item-backet" aria-label="Купить">В корзину</a>
 						</div>
 					</div>
-					<div class="catalog-item">
-						<a href="#" class="catalog-item--open">
-							<img src="#" alt="Большая корзинка для игрушек">
+					<div class="catalog__item">
+						<a href="#">
+							<img src="#" alt="зайчик-попрыгайчик">
 						</a>
-						<h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
-						<span class="catalog-item__description">Диаметр 30 см, высота 30 см</span>
-						<div class="catalog-item__buy">
-							<span class="catalog-item-price">1500 руб.</span>
-							<a href="#" class="catalog-item__backet"></a>
+						<h2 class="catalog__item-title">Большая корзинка для игрушек</h2>
+						<span class="catalog__item-description">Диаметр 30 см, высота 30 см</span>
+						<div class="catalog__item-buy">
+							<span class="catalog__item-price">1500 руб.</span>
+							<a href="#" class="catalog__item-backet" aria-label="Купить">В корзину</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<section class="production-process">
 			<div class="production-process__caption">
-				<img src="#" alt="" class="production-process__icon">
-				<span class="production-process__title">Процесс производства</span>
+				<h1 class="production-process__title production-process__title--icon">Процесс производства</h1>
 			</div>
 			<div class="production-process__video">
-				<img src="#" alt="Процесс производства">
+				<video src="#" poster="img/video.jpg"></video>
+				<div class="production-process__video-but"></div>
 			</div>
 			<a href="#" class="btn">Сделать заказ</a>
 		</section>
+
 	</main>
 
 	<footer class="page-footer">
 		<div class="page-footer__container">
 			<div class="socials">
 				<ul class="socials__social-items">
-					<li class="socials__social-item socials__social-item--icon socials__social-item--inst">инстаграмм</li>
-					<li class="socials__social-item socials__social-item--icon socials__social-item--fb">фейсбук</li>
-					<li class="socials__social-item socials__social-item--icon socials__social-item--tw">твитер</li>
+					<li class="socials__social-item socials__social-item--icon socials__social-item--inst"><a href="https://www.instagram.com">инстаграмм</a></li>
+					<li class="socials__social-item socials__social-item--icon socials__social-item--fb"><a href="https://www.facebook.com">фейсбук</a></li>
+					<li class="socials__social-item socials__social-item--icon socials__social-item--tw"><a href="https://twitter.com">твитер</a></li>
 				</ul>
 			</div>
 			<div class="page-footer__copyright">
