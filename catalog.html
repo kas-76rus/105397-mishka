@@ -9,7 +9,7 @@
 	<header class="page-header">
 		<div class="page-header__container">
 			<div class="page-header__logo">
-				<a href="index.html">Логотип Мишка</a>
+				<a><img src="#" alt="Логотип Мишка"></a>
 			</div>
 			<nav class="page-header__menu">
 				<button class="page-header__toggle" type="button">Открыть меню</button>
@@ -20,6 +20,8 @@
 					<li class="page-header__menu-item">
 						<a href="form.html">Вязание на заказ</a>
 					</li>
+				</ul>
+				<ul class="page-header__menu-items">
 					<li class="page-header__menu-item page-header__menu-item--icon page-header__menu-item--search">
 						<a href="#">Поиск по сайту</a>
 					</li>
@@ -39,37 +41,38 @@
 		<section class="catalog">
 			<div class="content__container">
 				<div class="catalog__items">
-					<div class="catalog__item">
+					<div class="catalog-item catalog__item">
 						<a href="#">
 							<img src="#" alt="зайчик-попрыгайчик">
 						</a>
-						<h2 class="catalog__item-title">Зайчик-попрыгайчик</h2>
-						<span class="catalog__item-description">Рост 30 см, вес 200 г</span>
-						<div class="catalog__item-buy">
-							<span class="catalog__item-price">1200 руб.</span>
-							<a href="#" class="catalog__item-backet" aria-label="Купить">В корзину</a>
+						<h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+						<span class="catalog-item__description">Рост 30 см, вес 200 г</span>
+						<div class="catalog-item__buy">
+							<span class="catalog-item__price">1200 руб.</span>
+							<a href="#" class="catalog-item__backet" aria-label="Купить"></a>
 						</div>
 					</div>
-					<div class="catalog__item">
+					<div class="catalog-item catalog__item">
 						<a href="#">
-							<img src="#" alt="зайчик-попрыгайчик">
+							<img src="#" alt="корзина для белья">
 						</a>
-						<h2 class="catalog__item-title">Корзинка для белья</h2>
-						<span class="catalog__item-description">Диаметр 15 см, высота 10 см</span>
-						<div class="catalog__item-buy">
-							<span class="catalog__item-price">690 руб.</span>
-							<a href="#" class="catalog__item-backet" aria-label="Купить">В корзину</a>
+						<h2 class="catalog-item__title">Корзинка для белья</h2>
+						<span class="catalog-item__description">Диаметр 15 см, высота 15 см</span>
+						<div class="catalog-item__buy">
+							<span class="catalog-item__price">1500 руб.</span>
+							<a href="#" class="catalog-item__backet" aria-label="Купить"></a>
 						</div>
 					</div>
-					<div class="catalog__item">
+					</div>
+					<div class="catalog-item catalog__item">
 						<a href="#">
-							<img src="#" alt="зайчик-попрыгайчик">
+							<img src="#" alt="Большая корзинка для игрушек">
 						</a>
-						<h2 class="catalog__item-title">Большая корзинка для игрушек</h2>
-						<span class="catalog__item-description">Диаметр 30 см, высота 30 см</span>
-						<div class="catalog__item-buy">
-							<span class="catalog__item-price">1500 руб.</span>
-							<a href="#" class="catalog__item-backet" aria-label="Купить">В корзину</a>
+						<h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+						<span class="catalog-item__description">Диаметр 30 см, высота 30 см</span>
+						<div class="catalog-item__buy">
+							<span class="catalog-item__price">1500 руб.</span>
+							<a href="#" class="catalog-item__backet" aria-label="Купить"></a>
 						</div>
 					</div>
 				</div>
@@ -80,9 +83,9 @@
 			<div class="production-process__caption">
 				<h1 class="production-process__title production-process__title--icon">Процесс производства</h1>
 			</div>
-			<div class="production-process__video">
+			<div class="video">
 				<video src="#" poster="img/video.jpg"></video>
-				<div class="production-process__video-but"></div>
+				<button class="production-process__video-but"></button>
 			</div>
 			<a href="#" class="btn">Сделать заказ</a>
 		</section>

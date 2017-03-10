@@ -9,7 +9,7 @@
 	<header class="page-header">
 		<div class="page-header__container">
 			<div class="page-header__logo">
-				<a href="index.html">Логотип Мишка</a>
+				<a><img src="#" alt="Логотип Мишка"></a>
 			</div>
 			<nav class="page-header__menu">
 				<button class="page-header__toggle" type="button">Открыть меню</button>
@@ -20,6 +20,8 @@
 					<li class="page-header__menu-item">
 						<a href="form.html">Вязание на заказ</a>
 					</li>
+				</ul>
+				<ul class="page-header__menu-items">
 					<li class="page-header__menu-item page-header__menu-item--icon page-header__menu-item--search">
 						<a href="#">Поиск по сайту</a>
 					</li>
@@ -32,101 +34,74 @@
 	</header>
 
 	<main class="content">
-		<div class="page-title page-title--bg">
+		<div class="page-title page-title--main">
 			<h1>Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
 		</div>
 		<div class="page-menu">
 			<div class="page-menu__items">
-				<a href="#" class="page-menu__item">Предметы интерьера</a>
-				<a href="#" class="page-menu__item">Детские игрушки</a>
+				<a href="#" class="page-menu__item page-menu__item--int">Предметы интерьера</a>
+				<a href="#" class="page-menu__item page-menu__item--toy">Детские игрушки</a>
 			</div>
 		</div>
 
-		<section class="product-of-week">
+		<section class="product-of-week separator">
 			<div class="content__container">
 				<div class="product-of-week__title">
-					<h1>Вязаные корзинки</h1>
+					<h2 class="title-small">Вязаные корзинки</h2>
 					<span class="product-of-week__subtitle">Товар недели</span>
 				</div>
 				<p class="product-of-week__text">
 					Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках, и&nbsp;трех размерах.
 				</p>
-				<table class="product-of-week__options">
-					<tr>
-						<td>Цвет:</td>
-						<td>«Тиффани»/серый</td>
+				<table class="product-options">
+					<tr class="product-options__item">
+						<td class="product-options__name">Цвет:</td>
+						<td class="product-options__option">«Тиффани»/серый</td>
 					</tr>
-					<tr>
-						<td>Диаметр:</td>
-						<td>25 см</td>
+					<tr class="product-options__item">
+						<td class="product-options__name">Диаметр:</td>
+						<td class="product-options__option">25 см</td>
 					</tr>
-					<tr>
-						<td>Высота</td>
-						<td>15 см</td>
+					<tr class="product-options__item">
+						<td class="product-options__name">Высота</td>
+						<td class="product-options__option">15 см</td>
 					</tr>
 				</table>
 				<img src="#" alt="Корзинка красивая" class="product-of-week__pic">
 				<span class="product-of-week__value">Цена: 990 руб.</span>
 				<a href="#" class="btn">Заказать</a>
 			</div>
-			<div class="in-basket">
-				<div class="in-basket__title">
-					<h1>Добавить в&nbsp;корзину</h1>
-					<span class="in-basket__subtitle">Выберите размер:</span>
-				</div>
-				<form action="#" class="in-basket-form" method="post">
-					<ul class="in-basket-form__items">
-						<li class="in-basket-form__item">
-							<input type="radio" name="radiogroup" value="S" id="radio-size1">
-							<label class="order-form__filter-checkbox" for="radio-size2">S</label>
-						</li>
-						<li class="in-basket-form__item">
-							<input type="radio" name="radiogroup" value="M" id="radio-size2">
-							<label class="order-form__filter-checkbox" for="radio-size2">M</label>
-						</li>
-						<li class="in-basket-form__item">
-							<input type="radio" name="radiogroup" value="L" id="radio-size3">
-							<label class="order-form__filter-checkbox" for="radio-size3">"L"</label>
-						</li>
-					</ul>
-					<div class="btn in-basket-form__btn">
-						<input type="submit" value="Добавить">
-					</div>
-				</form>
-			</div>
 		</section>
-
-		<div class="separator"></div>
 
 		<section class="advantages">
 			<div class="content__container">
 				<div class="advantages__title">
-					<h2>Коротко о нас</h2>
+					<h2 class="title-small">Коротко о нас</h2>
 				</div>
 				<ul class="advantages__items">
-					<li class="advantages__item advantages__item-icon advantages__item--eco">Экологически чистые материалы</li>
-					<li class="advantages__item advantages__item-icon advantages__item--price">Скандинавский стиль по&nbsp;российской цене</li>
-					<li class="advantages__item advantages__item-icon advantages__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
-					<li class="advantages__item advantages__item-icon advantages__item--handmade">Связано вручную с&nbsp;любовью и&nbsp;умилением</li>
-					<li class="advantages__item advantages__item-icon advantages__item--native">Поддержка отечественного производителя</li>
-					<li class="advantages__item advantages__item-icon advantages__item--pack">Поставляется в&nbsp;подарочной упаковке</li>
+					<li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
+					<li class="advantages__item advantages__item--price">Скандинавский стиль по&nbsp;российской цене</li>
+					<li class="advantages__item advantages__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
+					<li class="advantages__item advantages__item--handmade">Связано вручную с&nbsp;любовью и&nbsp;умилением</li>
+					<li class="advantages__item advantages__item--native">Поддержка отечественного производителя</li>
+					<li class="advantages__item advantages__item--pack">Поставляется в&nbsp;подарочной упаковке</li>
 				</ul>
 			</div>
 		</section>
 
-		<section class="reviews">
+		<section class="reviews slider separator">
 			<div class="content__container">
 				<div class="reviews__title">
-					<h2>Отзывы</h2>
+					<h2 class="title-small">Отзывы</h2>
 				</div>
-				<div class="reviews__list">
-					<blockquote class="review__item">
+				<div class="reviews__list slider__items">
+					<blockquote class="reviews__item slider__item">
 						<p>Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
 						<cite>Анастасия Красильникова</cite>
+						<span class="reviews__author-contact">@misssssiskras</span>
 					</blockquote>
-					<span class="reviews__author-contact">@misssssiskras</span>
 				</div>
-				<div class="sliders">
+				<div class="slider__controls">
 					<a href="#" class="sliders__btn sliders__btn--prev">назад</a>
 					<a href="#" class="sliders__btn sliders__btn--next">вперед</a>
 				</div>
@@ -134,21 +109,19 @@
 			</div>
 		</section>
 
-		<div class="separator"></div>
-
 		<section class="contacts">
 			<div class="content__container">
 				<div class="contacts__title">
-					<h2>Контакты</h2>
+					<h2 class="title-small">Контакты</h2>
 				</div>
-				<table class="contacts__adress">
+				<table class="address">
 					<tr>
-						<td>e-mail:</td>
-						<td>info@mimimishkashop.ru</td>
+						<td class="address__name">e-mail:</td>
+						<td class="address__content"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
 					</tr>
 					<tr>
-						<td>адрес:</td>
-						<td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+						<td class="address__name">адрес:</td>
+						<td class="address__content">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
 					</tr>
 				</table>
 			</div>
@@ -175,5 +148,31 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal">
+		<div class="modal__title">
+			<h2 class="title-small">Добавить в&nbsp;корзину</h2>
+			<span class="modal__subtitle">Выберите размер:</span>
+		</div>
+		<form action="#" class="in-basket-form" method="post">
+			<ul class="in-basket-form__items">
+				<li class="in-basket-form__item">
+					<input type="radio" name="radiogroup" value="S" id="radio-size1">
+					<label class="order-form__filter-checkbox" for="radio-size2">S</label>
+				</li>
+				<li class="in-basket-form__item">
+					<input type="radio" name="radiogroup" value="M" id="radio-size2">
+					<label class="order-form__filter-checkbox" for="radio-size2">M</label>
+				</li>
+				<li class="in-basket-form__item">
+					<input type="radio" name="radiogroup" value="L" id="radio-size3">
+					<label class="order-form__filter-checkbox" for="radio-size3">"L"</label>
+				</li>
+			</ul>
+			<div class="btn in-basket-form__btn">
+				<input type="submit" value="Добавить">
+			</div>
+		</form>
+	</div>
 </body>
 </html>
