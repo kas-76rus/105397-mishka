@@ -8,7 +8,7 @@
 	<header class="page-header">
 		<div class="page-header__container">
 			<div class="page-header__logo">
-				<a><img src="#" alt="Логотип Мишка"></a>
+				<a><img src="index.html" alt="Логотип Мишка"></a>
 			</div>
 			<nav class="page-header__menu">
 				<button class="page-header__toggle" type="button">Открыть меню</button>
@@ -17,7 +17,7 @@
 						<a href="catalog.html">Каталог товаров</a>
 					</li>
 					<li class="page-header__menu-item">
-						<a href="form.html">Вязание на заказ</a>
+						<a>Вязание на заказ</a>
 					</li>
 				</ul>
 				<ul class="page-header__menu-items">
@@ -38,9 +38,9 @@
 		</div>
 		<div class="content-container">
 			<form action="#" class="form" method="post">
-				<div class="form__slogan">
+				<p class="form__slogan">
 					Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы уточнить детали.
-				</div>
+				</p>
 				<fildset class="form__choice">
 					<legend class="form__choice-title">
 						Тип
@@ -111,13 +111,13 @@
 
 				<fildset class="form__choice">
 					<ul class="form__items">
-						<li class="form__item">
+						<li class="form__item form__item--textsquare">
 							<label class="form__choice-title">Тел</label>
 							<input class="form__textfield form__textfield--icon form__textfield--phone" id="phone" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
 						</li>
-						<li class="order-form__filter-item">
+						<li class="form__item form__item--textsquare">
 							<label class="form__choice-title">E-mail</label>
-							<input class="form__textfield form__textfield--icon form__textfield--phone" id="mail" type="email" name="mail" placeholder="Ваш Email*" required>
+							<input class="form__textfield form__textfield--icon form__textfield--mail" id="mail" type="email" name="mail" placeholder="Ваш Email*" required>
 						</li>
 					</ul>
 				</fildset>
@@ -140,16 +140,14 @@
 
 	<footer class="page-footer">
 		<div class="page-footer__container">
-			<div class="socials">
-				<ul class="socials__social-items">
-					<li class="socials__social-item socials__social-item--icon socials__social-item--inst"><a href="https://www.instagram.com">инстаграмм</a></li>
-					<li class="socials__social-item socials__social-item--icon socials__social-item--fb"><a href="https://www.facebook.com">фейсбук</a></li>
-					<li class="socials__social-item socials__social-item--icon socials__social-item--tw"><a href="https://twitter.com">твитер</a></li>
-				</ul>
-			</div>
+			<ul class="socials">
+				<li class="socials__social-item socials__social-item--inst"><a href="https://www.instagram.com">инстаграмм</a></li>
+				<li class="socials__social-item socials__social-item--fb"><a href="https://www.facebook.com">фейсбук</a></li>
+				<li class="socials__social-item socials__social-item--tw"><a href="https://twitter.com">твитер</a></li>
+			</ul>
 			<div class="page-footer__copyright">
 				Разработано:
-				<a class="btn page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+				<a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
 			</div>
 		</div>
 	</footer>

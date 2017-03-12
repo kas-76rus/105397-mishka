@@ -9,13 +9,13 @@
 	<header class="page-header">
 		<div class="page-header__container">
 			<div class="page-header__logo">
-				<a><img src="#" alt="Логотип Мишка"></a>
+				<a><img src="index.html" alt="Логотип Мишка"></a>
 			</div>
 			<nav class="page-header__menu">
 				<button class="page-header__toggle" type="button">Открыть меню</button>
 				<ul class="page-header__menu-items">
 					<li class="page-header__menu-item">
-						<a href="catalog.html">Каталог товаров</a>
+						<a>Каталог товаров</a>
 					</li>
 					<li class="page-header__menu-item">
 						<a href="form.html">Вязание на заказ</a>
@@ -42,22 +42,22 @@
 			<div class="content__container">
 				<div class="catalog__items">
 					<div class="catalog-item catalog__item">
-						<a href="#">
+						<a class="catalog__picture" href="#">
 							<img src="#" alt="зайчик-попрыгайчик">
 						</a>
 						<h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
-						<span class="catalog-item__description">Рост 30 см, вес 200 г</span>
+						<div class="catalog-item__description">Рост 30 см, вес 200 г</div>
 						<div class="catalog-item__buy">
 							<span class="catalog-item__price">1200 руб.</span>
 							<a href="#" class="catalog-item__backet" aria-label="Купить"></a>
 						</div>
 					</div>
 					<div class="catalog-item catalog__item">
-						<a href="#">
+						<a class="catalog__picture" href="#">
 							<img src="#" alt="корзина для белья">
 						</a>
 						<h2 class="catalog-item__title">Корзинка для белья</h2>
-						<span class="catalog-item__description">Диаметр 15 см, высота 15 см</span>
+						<div class="catalog-item__description">Диаметр 15 см, высота 15 см</div>
 						<div class="catalog-item__buy">
 							<span class="catalog-item__price">1500 руб.</span>
 							<a href="#" class="catalog-item__backet" aria-label="Купить"></a>
@@ -65,11 +65,11 @@
 					</div>
 					</div>
 					<div class="catalog-item catalog__item">
-						<a href="#">
+						<a class="catalog__picture" href="#">
 							<img src="#" alt="Большая корзинка для игрушек">
 						</a>
 						<h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
-						<span class="catalog-item__description">Диаметр 30 см, высота 30 см</span>
+						<div class="catalog-item__description">Диаметр 30 см, высота 30 см</div>
 						<div class="catalog-item__buy">
 							<span class="catalog-item__price">1500 руб.</span>
 							<a href="#" class="catalog-item__backet" aria-label="Купить"></a>
@@ -80,12 +80,10 @@
 		</section>
 
 		<section class="production-process">
-			<div class="production-process__caption">
-				<h1 class="production-process__title production-process__title--icon">Процесс производства</h1>
-			</div>
+			<h2 class="production-process__caption">Процесс производства</h2>
 			<div class="video">
 				<video src="#" poster="img/video.jpg"></video>
-				<button class="production-process__video-but"></button>
+				<button type="button" class="video__pin">Воспроизвести</button>
 			</div>
 			<a href="#" class="btn">Сделать заказ</a>
 		</section>
@@ -94,16 +92,14 @@
 
 	<footer class="page-footer">
 		<div class="page-footer__container">
-			<div class="socials">
-				<ul class="socials__social-items">
-					<li class="socials__social-item socials__social-item--icon socials__social-item--inst"><a href="https://www.instagram.com">инстаграмм</a></li>
-					<li class="socials__social-item socials__social-item--icon socials__social-item--fb"><a href="https://www.facebook.com">фейсбук</a></li>
-					<li class="socials__social-item socials__social-item--icon socials__social-item--tw"><a href="https://twitter.com">твитер</a></li>
-				</ul>
-			</div>
+			<ul class="socials">
+				<li class="socials__social-item socials__social-item--inst"><a href="https://www.instagram.com">инстаграмм</a></li>
+				<li class="socials__social-item socials__social-item--fb"><a href="https://www.facebook.com">фейсбук</a></li>
+				<li class="socials__social-item socials__social-item--tw"><a href="https://twitter.com">твитер</a></li>
+			</ul>
 			<div class="page-footer__copyright">
 				Разработано:
-				<a class="btn page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+				<a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
 			</div>
 		</div>
 	</footer>
